@@ -93,6 +93,13 @@
   ```
     ng serve
   ```
+  <li>Pode ser que apareça uma mensagem do angular perguntando se voce quer compartilhar estatisca do projeto, voce pode escolher s ou n</li>
+  
+  ```
+    ? Would you like to share pseudonymous usage data about this project with the Angular Team
+at Google under Google's Privacy Policy at https://policies.google.com/privacy. For more
+details and how to change this setting, see https://angular.io/analytics.
+  ```
   <li>Acesse o link:</li>
 
   ```
