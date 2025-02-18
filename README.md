@@ -1,6 +1,6 @@
 # To-Do
 
-<h2>💻 Técnologias utilizadas:</h2>
+<h2>💻 Tecnologias utilizadas:</h2>
 <ul>
   <li>Java 17</li>
   <li>SDK 22</li>
@@ -12,7 +12,7 @@
 </ul>
 
 <h2>🚶 Primeiros Passos</h2>
-<p>Certifique-se de ter todas as técnologias necessárias instaladas</p>
+<p>Certifique-se de ter todas as tecnologias necessárias instaladas</p>
 <ul>
   <li><a href="https://www.oracle.com/br/java/technologies/downloads/" target="_blank">Java 17</a></li>
   <li><a href="https://www.oracle.com/br/java/technologies/downloads/" target="_blank">SDK 22</a></li>
