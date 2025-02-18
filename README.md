@@ -44,7 +44,6 @@
   ```
     git clone https://github.com/GabrielSouza45/To-Do.git
   ```
-  <li>Extraia o arquivo compactado na área de trabalho usando o "Extract Here" (ou "Extraia aqui", caso o seu esteja em português)</li>
 
   
 </ul>
