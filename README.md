@@ -4,7 +4,8 @@
 <ul>
   <li>Java 17</li>
   <li>SDK 22</li>
-  <li>Maven 3.9.9</li>
+  <li>Spring Boot v3.3.8</li>
+  <li>Maven v3.9.9</li>
   <li>Angular 17</li>
   <li>Node v20.16.0</li>
   <li>Banco de Dados H2 (modo memória)</li>
