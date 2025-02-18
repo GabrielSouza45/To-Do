@@ -53,8 +53,6 @@ public class ToDoController {
     @PutMapping("/{id}")
     @CrossOrigin(allowedHeaders = "*", origins = "*")
     public ResponseEntity<?> updateToDo(@PathVariable("id") Long id, @RequestBody StatusDTO status) {
-        System.out.println(status);
-        System.out.println(status.status());
         if (!validarStatus(status.status()))
             return new ResponseEntity<>(MessageToJson.build("Status inválido"), HttpStatus.BAD_REQUEST);
         return toDoService.update(id, status.status());

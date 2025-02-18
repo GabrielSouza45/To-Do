@@ -4,7 +4,7 @@
   <!-- Formulário de Nova Tarefa -->
   <div class="mb-3">
     <form (submit)="pesquisarTarefaId()" [formGroup]="formToDo" class="input-group">
-      <input type="text" class="form-control" formControlName="id" placeholder="Digite o id da Tarefa" required>
+      <input type="number" class="form-control" formControlName="id" placeholder="Digite o id da Tarefa" required>
       <button type="submit" class="btn btn-primary">Pesquisar</button>
     </form>
 
