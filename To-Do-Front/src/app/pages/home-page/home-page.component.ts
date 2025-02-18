@@ -37,13 +37,36 @@ export class HomePageComponent extends TodoServiceService {
     this.create("", this.getTarefa())
       .subscribe({
         next: (response) => {
-          console.log(response);
-
           this.cleanForm();
           this.loadTarefas();
         }
       })
   }
+
+  pesquisarTarefaId() {
+    const id = this.formToDo.value.id;
+    console.log(id);
+
+    if (!id) {
+      this.loadTarefas();
+      return;
+    }
+
+
+    this.getById(id)
+      .subscribe({
+        next: (response) => {
+          this.cleanForm();
+          this.tarefas = [];
+          this.tarefas.push(response.body);
+        },
+        error: () => {
+          this.loadTarefas();
+          this.cleanForm();
+        }
+      })
+  }
+
 
   editarStatus(tarefa: ToDo) {
     const statusSelected = this.formToDo.value.status;
@@ -78,6 +101,7 @@ export class HomePageComponent extends TodoServiceService {
 
   private loadForm(): FormGroup {
     return new FormGroup({
+      id: new FormControl(''),
       titulo: new FormControl('', [Validators.required, Validators.minLength(3), Validators.maxLength(10)]),
       descricao: new FormControl('', [Validators.required, Validators.minLength(3), Validators.maxLength(20)]),
       status: new FormControl('', [Validators.required])
@@ -88,6 +112,7 @@ export class HomePageComponent extends TodoServiceService {
     this.getAll()
       .subscribe({
         next: (response): void => {
+          this.tarefas = [];
           this.tarefas = response.body;
         }
       })
